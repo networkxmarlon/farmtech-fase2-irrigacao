@@ -6,7 +6,7 @@
 **Modalidade:** trabalho individual.  
 **Curso/turma:** preencher conforme o portal.  
 **Etapa:** Fase 2 — sensores e irrigação inteligente.  
-**Vídeo no YouTube, não listado:** https://youtu.be/yCt7obJDfs8
+**Vídeo no YouTube, não listado:** https://youtu.be/yCt7obJDfs8                                
 **Projeto salvo no Wokwi:** https://wokwi.com/projects/477560157109657601
 
 O protótipo acompanha um talhão de café, uma das culturas usadas na Fase 1, e comanda uma bomba representada por um relé azul. A umidade simulada define a necessidade de água. Três botões representam a suficiência de N, P e K; o LDR representa o pH. A previsão meteorológica em Python e a análise de uma sequência de leituras em R complementam o controle local.
