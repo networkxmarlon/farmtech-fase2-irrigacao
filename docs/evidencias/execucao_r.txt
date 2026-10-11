@@ -1,0 +1,16 @@
+Origem: dados/exemplo_sintetico.csv 
+ATENCAO: dados SINTETICOS, sem medicao de fazenda.
+Registros: 9 | Umidades validas: 9 
+Umidade: media 39.22% | mediana 38.00% | desvio 7.10 | min 30.0 | max 50.0
+Registros com pH simulado na faixa 5.5-6.5: 8 
+Registros com N insuficiente: 1 
+Registros com P insuficiente: 2 
+Registros com K insuficiente: 3 
+Ultimas 5: media 34.00% | tendencia -1.000 pontos/segundo | proxima leitura 28.00%
+Media e extrapolacao de curto prazo indicam baixa umidade. 
+Comando para o Monitor Serial: R LIGAR 
+Cole logo apos a coleta. Validade no ESP32: 120 s de tempo simulado.
+Clima, umidade critica, umidade >=60, falha DHT e limite de bomba prevalecem.
+A regressao descreve cinco leituras: nao valida previsao agronomica nem causalidade.
+null device 
+          1 

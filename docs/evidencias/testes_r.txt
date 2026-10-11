@@ -1,0 +1,6 @@
+seca: OK, R LIGAR
+umida: OK, R DESLIGAR
+intermediaria: OK, R AUTO
+curta: OK, R AUTO
+invalida: OK, R AUTO
+todas_invalidas: OK, R AUTO

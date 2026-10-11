@@ -1,0 +1,20 @@
+{
+  "consultado_em_utc": "2026-10-11T00:42:56.875101+00:00",
+  "periodos_horarios_utc": [
+    "2026-10-11T01:00:00+00:00",
+    "2026-10-11T02:00:00+00:00",
+    "2026-10-11T03:00:00+00:00",
+    "2026-10-11T04:00:00+00:00",
+    "2026-10-11T05:00:00+00:00",
+    "2026-10-11T06:00:00+00:00"
+  ],
+  "chuva_acumulada_mm": 0.3,
+  "maior_probabilidade_horaria_percentual": 62.0,
+  "comando_serial": "CHUVA 0.30 62.0",
+  "origem": "Open-Meteo Forecast API",
+  "coordenadas_solicitadas": {
+    "latitude": -21.55,
+    "longitude": -45.43
+  },
+  "url_consultada": "https://api.open-meteo.com/v1/forecast?latitude=-21.55&longitude=-45.43&hourly=precipitation%2Cprecipitation_probability&forecast_days=2&timezone=UTC"
+}

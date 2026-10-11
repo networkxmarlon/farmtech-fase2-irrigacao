@@ -1,0 +1,162 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+# FarmTech Cafe | DHT22 e LDR sao substituicoes didaticas.
+# CHUVA <mm_proximas_6h> <maior_prob_horaria_%> (ex.: CHUVA 5 80)
+# CLIMA OFF | R LIGAR | R DESLIGAR | R AUTO | REARME | STATUS | AJUDA
+# N/P/K pressionados=adequado; soltos=insuficiente. Ajuste o LDR ao mudar NPK.
+ms,umidade,temperatura,adc,ph,n,p,k,bomba,clima_valido,chuva_mm,prob_chuva,r_valido,motivo
+# BOMBA LIGADA: UMIDADE_BAIXA
+2544,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+4553,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+6561,35.0,24.0,1858,6.35,0,0,1,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+8569,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+10577,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+12585,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+14593,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+16601,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+18609,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+20617,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# Previsao removida; controle local.
+22626,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+24634,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+26642,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+28650,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+30658,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# Controle por histerese local restaurado.
+32666,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+34674,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+36682,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+38690,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+40698,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+42706,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+44714,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+46722,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+48730,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+50738,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+52746,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+54754,59.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,HISTERESE_MANTEM_LIGADA
+# BOMBA DESLIGADA: UMIDADE_SUFICIENTE
+56763,61.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,UMIDADE_SUFICIENTE
+58772,64.5,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,UMIDADE_SUFICIENTE
+60781,65.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,UMIDADE_SUFICIENTE
+62790,65.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,UMIDADE_SUFICIENTE
+64799,65.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,UMIDADE_SUFICIENTE
+66808,65.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,UMIDADE_SUFICIENTE
+68817,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+70826,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+72835,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+74844,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+# Recomendacao R recebida, validade 120 segundos de tempo simulado.
+# BOMBA LIGADA: RECOMENDACAO_R_LIGAR
+76844,50.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+78853,50.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+80862,50.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+82871,50.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+84880,50.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+# Recomendacao R recebida, validade 120 segundos de tempo simulado.
+# BOMBA DESLIGADA: RECOMENDACAO_R_DESLIGAR
+86880,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+88889,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+90898,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+92907,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+94916,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+96925,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+98934,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+100943,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+102952,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+104961,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+106970,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+108979,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+110988,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+112997,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+115006,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+117015,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+119024,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+121033,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+123042,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+125051,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+127060,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+129069,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+131078,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+133087,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+135096,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+137105,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+139114,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+141123,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+143132,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+145141,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,1,RECOMENDACAO_R_DESLIGAR
+# Controle por histerese local restaurado.
+147150,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+149159,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+151168,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+153177,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+# Previsao removida; controle local.
+155177,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+157186,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+159195,50.0,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+161204,52.5,24.0,1858,6.35,1,1,1,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+# BOMBA LIGADA: UMIDADE_BAIXA
+163204,36.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+165212,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+167220,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+169228,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+171236,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+173244,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+175252,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+177260,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+179268,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+181276,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+183284,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+185292,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+# Comando invalido. Digite AJUDA. Use ponto decimal e Enter.
+187300,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+189308,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+191316,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+193324,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+195332,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+197340,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+# Comando invalido. Digite AJUDA. Use ponto decimal e Enter.
+199348,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+201356,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+203364,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+205372,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+207380,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+209388,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+211396,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+213404,35.0,24.0,1858,6.35,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA

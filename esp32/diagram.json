@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "author": "FarmTech Solutions",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "id": "esp",
+      "type": "board-esp32-devkit-c-v4",
+      "top": 30,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "id": "n",
+      "type": "wokwi-pushbutton",
+      "top": -90,
+      "left": -180,
+      "attrs": {
+        "color": "green",
+        "label": "N: adequado",
+        "key": "N"
+      }
+    },
+    {
+      "id": "p",
+      "type": "wokwi-pushbutton",
+      "top": 0,
+      "left": -180,
+      "attrs": {
+        "color": "green",
+        "label": "P: adequado",
+        "key": "P"
+      }
+    },
+    {
+      "id": "k",
+      "type": "wokwi-pushbutton",
+      "top": 90,
+      "left": -180,
+      "attrs": {
+        "color": "green",
+        "label": "K: adequado",
+        "key": "K"
+      }
+    },
+    {
+      "id": "ldr",
+      "type": "wokwi-photoresistor-sensor",
+      "top": -130,
+      "left": 80,
+      "attrs": {
+        "lux": "130",
+        "gamma": "0.7",
+        "rl10": "50"
+      }
+    },
+    {
+      "id": "dht",
+      "type": "wokwi-dht22",
+      "top": -70,
+      "left": 280,
+      "attrs": {
+        "temperature": "24",
+        "humidity": "50"
+      }
+    },
+    {
+      "id": "pull",
+      "type": "wokwi-resistor",
+      "top": 0,
+      "left": 220,
+      "rotate": 90,
+      "attrs": {
+        "value": "10000"
+      }
+    },
+    {
+      "id": "relay",
+      "type": "wokwi-relay-module",
+      "top": 200,
+      "left": 290,
+      "attrs": {
+        "transistor": "pnp"
+      }
+    },
+    {
+      "id": "pump",
+      "type": "wokwi-led",
+      "top": 240,
+      "left": 510,
+      "attrs": {
+        "color": "blue",
+        "label": "BOMBA (simulada)"
+      }
+    },
+    {
+      "id": "res",
+      "type": "wokwi-resistor",
+      "top": 300,
+      "left": 400,
+      "attrs": {
+        "value": "330"
+      }
+    },
+    {
+      "id": "title",
+      "type": "wokwi-text",
+      "top": -190,
+      "left": -130,
+      "attrs": {
+        "text": "FarmTech | Cafe | Fase 2"
+      }
+    },
+    {
+      "id": "tldr",
+      "type": "wokwi-text",
+      "top": -160,
+      "left": 40,
+      "attrs": {
+        "text": "LDR = pH simulado (0-14)"
+      }
+    },
+    {
+      "id": "tdht",
+      "type": "wokwi-text",
+      "top": -110,
+      "left": 270,
+      "attrs": {
+        "text": "DHT22 = umidade simulada"
+      }
+    },
+    {
+      "id": "tn",
+      "type": "wokwi-text",
+      "top": 350,
+      "left": -130,
+      "attrs": {
+        "text": "N/P/K: pressionado = adequado; solto = insuficiente"
+      }
+    },
+    {
+      "id": "trel",
+      "type": "wokwi-text",
+      "top": 390,
+      "left": -130,
+      "attrs": {
+        "text": "Rele azul: COM-NO alimenta LED da bomba"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "esp:18",
+      "n:1.r",
+      "green",
+      [
+        "h-85",
+        "v-70"
+      ]
+    ],
+    [
+      "n:2.r",
+      "esp:GND.1",
+      "black",
+      [
+        "h-40",
+        "v260"
+      ]
+    ],
+    [
+      "esp:19",
+      "p:1.r",
+      "green",
+      [
+        "h-100"
+      ]
+    ],
+    [
+      "p:2.r",
+      "esp:GND.1",
+      "black",
+      [
+        "h-55",
+        "v170"
+      ]
+    ],
+    [
+      "esp:21",
+      "k:1.r",
+      "green",
+      [
+        "h-115"
+      ]
+    ],
+    [
+      "k:2.r",
+      "esp:GND.1",
+      "black",
+      [
+        "h-70",
+        "v80"
+      ]
+    ],
+    [
+      "esp:3V3",
+      "ldr:VCC",
+      "red",
+      [
+        "h40",
+        "v-230"
+      ]
+    ],
+    [
+      "esp:GND.1",
+      "ldr:GND",
+      "black",
+      [
+        "h20",
+        "v-100"
+      ]
+    ],
+    [
+      "esp:34",
+      "ldr:AO",
+      "orange",
+      [
+        "h-20",
+        "v-190"
+      ]
+    ],
+    [
+      "esp:3V3",
+      "dht:VCC",
+      "red",
+      [
+        "h190",
+        "v-140"
+      ]
+    ],
+    [
+      "esp:GND.1",
+      "dht:GND",
+      "black",
+      [
+        "v30",
+        "h230"
+      ]
+    ],
+    [
+      "esp:15",
+      "dht:SDA",
+      "purple",
+      [
+        "h100",
+        "v-120"
+      ]
+    ],
+    [
+      "esp:3V3",
+      "pull:1",
+      "red",
+      []
+    ],
+    [
+      "pull:2",
+      "dht:SDA",
+      "purple",
+      []
+    ],
+    [
+      "esp:5V",
+      "relay:VCC",
+      "red",
+      [
+        "h220",
+        "v80"
+      ]
+    ],
+    [
+      "esp:GND.1",
+      "relay:GND",
+      "black",
+      [
+        "v50",
+        "h200"
+      ]
+    ],
+    [
+      "esp:23",
+      "relay:IN",
+      "blue",
+      [
+        "h120",
+        "v100"
+      ]
+    ],
+    [
+      "esp:3V3",
+      "relay:COM",
+      "red",
+      [
+        "h350",
+        "v280"
+      ]
+    ],
+    [
+      "relay:NO",
+      "res:1",
+      "blue",
+      [
+        "v60"
+      ]
+    ],
+    [
+      "res:2",
+      "pump:A",
+      "blue",
+      []
+    ],
+    [
+      "pump:C",
+      "esp:GND.1",
+      "black",
+      [
+        "v110",
+        "h-480"
+      ]
+    ]
+  ],
+  "serialMonitor": {
+    "display": "always",
+    "newline": "lf"
+  }
+}

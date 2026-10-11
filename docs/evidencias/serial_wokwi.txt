@@ -1,0 +1,47 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1156
+load:0x40078000,len:11456
+ho 0 tail 12 room 4
+load:0x40080400,len:2972
+entry 0x400805dc
+# FarmTech Cafe | DHT22 e LDR sao substituicoes didaticas.
+# CHUVA <mm_proximas_6h> <maior_prob_horaria_%> (ex.: CHUVA 5 80)
+# CLIMA OFF | R LIGAR | R DESLIGAR | R AUTO | REARME | STATUS | AJUDA
+# N/P/K pressionados=adequado; soltos=insuficiente. Ajuste o LDR ao mudar NPK.
+ms,umidade,temperatura,adc,ph,n,p,k,bomba,clima_valido,chuva_mm,prob_chuva,r_valido,motivo
+2546,50.0,24.0,1858,6.35,0,0,0,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+4546,50.0,24.0,1858,6.35,0,0,0,0,0,nan,nan,0,HISTERESE_MANTEM_DESLIGADA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# Recomendacao R recebida, validade 120 segundos de tempo simulado.
+# BOMBA LIGADA: RECOMENDACAO_R_LIGAR
+6547,50.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+8547,50.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,1,RECOMENDACAO_R_LIGAR
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# Controle por histerese local restaurado.
+10547,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# Recomendacao R recebida, validade 120 segundos de tempo simulado.
+# BOMBA DESLIGADA: RECOMENDACAO_R_DESLIGAR
+12556,65.0,24.0,1858,6.35,0,0,0,0,0,nan,nan,1,UMIDADE_SUFICIENTE
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# Controle por histerese local restaurado.
+# BOMBA LIGADA: UMIDADE_BAIXA
+14556,35.0,24.0,1858,6.35,0,0,0,1,0,nan,nan,0,UMIDADE_BAIXA
+# ALERTA_NPK: ao menos um nutriente insuficiente; avaliar adubacao por analise de solo.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+# NPK alterado: ajuste manualmente a luz do LDR para representar novo pH.
+16565,35.0,24.0,1760,6.02,1,1,1,1,0,nan,nan,0,UMIDADE_BAIXA
+# Previsao recebida, validade de 6 horas de tempo simulado.
+# BOMBA DESLIGADA: CHUVA_PREVISTA
+18574,35.0,24.0,1760,6.02,1,1,1,0,1,5.00,80.0,0,CHUVA_PREVISTA
+# BOMBA LIGADA: SOLO_CRITICAMENTE_SECO
+20583,20.0,24.0,1760,6.02,1,1,1,1,1,5.00,80.0,0,SOLO_CRITICAMENTE_SECO
+22583,20.0,24.0,1760,6.02,1,1,1,1,1,5.00,80.0,0,SOLO_CRITICAMENTE_SECO

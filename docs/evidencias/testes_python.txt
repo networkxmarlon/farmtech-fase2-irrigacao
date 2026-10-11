@@ -1,0 +1,11 @@
+test_exporta_serial (test_python.ClimaTest.test_exporta_serial) ... ok
+test_falha_nao_vira_sol (test_python.ClimaTest.test_falha_nao_vira_sol) ... ok
+test_futuro_seis_horas (test_python.ClimaTest.test_futuro_seis_horas) ... ok
+test_horas_duplicadas (test_python.ClimaTest.test_horas_duplicadas) ... ok
+test_janela_incompleta (test_python.ClimaTest.test_janela_incompleta) ... ok
+test_prob_invalida (test_python.ClimaTest.test_prob_invalida) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
